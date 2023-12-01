@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Activitat 2</title>
+    </head>
+    <body>
+        <h1>Buscador de Smartphones</h1>
+
+<form>
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" placeholder="Escribe la marca" autocomplete="off">
+    
+    <label for="precio">Precio:</label>
+    <select id="precio">
+        <option value="0-200">0 - 200€</option>
+        <option value="201-500">201 - 500€</option>
+        <option value="501-1000">501 - 1000€</option>
+        <option value="1001+">1001€ y más</option>
+    </select>
+
+    <button type="button" onclick="buscarSmartphones()">Buscar</button>
+</form>
+
+<script>
+    // Datos de ejemplo para las marcas
+    var marcas = ["Apple", "Samsung", "Huawei", "Xiaomi", "OnePlus", "Google", "Sony"];
+
+    // Configuración del autocompletador para la marca
+    var inputMarca = document.getElementById("marca");
+    new Awesomplete(inputMarca, { list: marcas });
+
+    // Función para realizar la búsqueda (puedes personalizarla según tus necesidades)
+    function buscarSmartphones() {
+        var marcaSeleccionada = inputMarca.value;
+        var precioSeleccionado = document.getElementById("precio").value;
+
+        // Puedes realizar acciones con la marca y el precio seleccionados, como mostrar resultados, etc.
+        alert("Búsqueda realizada:\nMarca: " + marcaSeleccionada + "\nPrecio: " + precioSeleccionado);
+    }
+</script>
+    </body>
+</html>
