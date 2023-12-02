@@ -5,6 +5,35 @@
         <title>Activitat 2</title>
     </head>
     <body>
-        
+        <h1>Buscador de Smartphones</h1>
+
+<form>
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" placeholder="Escribe la marca" autocomplete="off">
+    
+    <label for="precio">Precio:</label>
+    <select id="precio">
+        <option value="0-200">0 - 200€</option>
+        <option value="201-500">201 - 500€</option>
+        <option value="501-1000">501 - 1000€</option>
+        <option value="1001+">1001€ y más</option>
+    </select>
+
+    <button type="button" onclick="buscarSmartphones()">Buscar</button>
+</form>
+
+<script>
+    var marcas = ["Apple", "Samsung", "Huawei", "Xiaomi", "OnePlus", "Google", "Sony"];
+
+    var inputMarca = document.getElementById("marca");
+    new Awesomplete(inputMarca, { list: marcas });
+
+    function buscarSmartphones() {
+        var marcaSeleccionada = inputMarca.value;
+        var precioSeleccionado = document.getElementById("precio").value;
+
+        alert("Búsqueda realizada:\nMarca: " + marcaSeleccionada + "\nPrecio: " + precioSeleccionado);
+    }
+</script>
     </body>
 </html>
