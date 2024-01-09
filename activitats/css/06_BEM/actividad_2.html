@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Actividad 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        #comentarios {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .comentario {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .nombre {
+            font-weight: bold;
+        }
+        
+        .fecha {
+            font-style: italic;
+            color: #555;
+        }
+        
+        .contenido {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="comentarios">
+        <div class="comentario">
+            <span class="nombre">Usuario1</span>
+            <span class="fecha">3 de enero de 2024</span>
+            <p class="contenido">Espacio de texto.</p>
+        </div>
+
+        <div class="comentario">
+            <span class="nombre">Usuario2</span>
+            <span class="fecha">5 de enero de 2024</span>
+            <p class="contenido">Espacio de texto.</p>
+        </div>
+
+        <form id="formulario-comentario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="contenido">Comentario:</label>
+            <textarea id="contenido" name="contenido" rows="4" required></textarea>
+
+            <button type="submit">Publicar Comentario</button>
+        </form>
+    </div>
+</body>
+
+</html>
