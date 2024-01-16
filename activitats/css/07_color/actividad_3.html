@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <title>Actividad 3</title>
     <style>
-        h2 {
-            font-family: Arial, Helvetica, sans-serif;
+        p {
+            font-family: Helvetica;
         }
         
         .color-nombre {
@@ -16,19 +16,80 @@
         
         .color-rojo {
             color: red;
+            text-decoration: underline rgba(207, 201, 201, 0.822);
+        }
+        
+        .cuadro {
+            margin-bottom: 10px;
+            color: black;
+        }
+        
+        #fondo {
+            background-color: rgba(97, 92, 92, 0.055);
+            margin: 0%;
+            padding: 1%;
+        }
+        
+        .fecha {
+            color: rgba(128, 128, 128, 0.493);
+            font-style: italic;
+        }
+        
+        .pie {
+            color: rgba(128, 128, 128, 0.493);
+            margin-top: 10%;
+        }
+        
+        .primer-p {
+            margin: 0%;
+            padding: 3%;
+        }
+        
+        hr {
+            border: 1px solid #00000018;
+        }
+        
+        .hr {
+            margin: 0%;
+            margin-left: 2% rgba(97, 92, 92, 0.055);
+            margin-right: 2% rgba(97, 92, 92, 0.055);
+        }
+        
+        header {
+            margin: 0%;
+            border: 1px #00000018;
+            color: rgb(12, 12, 12);
         }
     </style>
 
 </head>
 
 <body>
-    <h2 class="color-rojo">SIMPLETS<strong>BLOG</strong></h2>
+    <header></header>
+    <hr>
 
-    <h2>Hi, i'm <span class="color-nombre">Fernando Moreira</span>, a Frontend Engineer. <br> Enthusiast performance, responsive desing and usability, always looking for <br> the best project and good coffee. -- <a class="color-rojo">about me</a> </h2>
+    <p class="color-rojo">SIMPLETS<strong>BLOG</strong></p>
+    <hr>
 
-    <h2>Writing..</h2>
+    <p>Hi, i'm <span class="color-nombre">Fernando Moreira</span>, a Frontend Engineer. Enthusiast performance, responsive desing and usability, always looking for the best project and good coffee. -- <a class="color-rojo">about me</a> </p>
 
+    <p id="fondo">Writing..</p>
 
+    <p id="fondo"><span class="fecha">Dec 10,2015</span> — <span class="color-rojo"><strong>Welcome to jekyll!</strong> </span> — You'll find this post in your _posts directory. Go ahead and <br> edit it and re-build the side to see your changes. You can rebuild the
+        side in many different ways, but <br> the most common way is to run jekyll serve,...<span class="color-rojo"><i>Read more</i> </span> </p>
+    <hr class="hr">
+    <p id="fondo"><span class="fecha">Nov 26, 2015</span> — <span class="color-rojo"><strong>Lorem ipsum dolor sit</strong></span> — Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, earum, illo dolore recusandae rem laudantium sapiente dolorem nisi
+        nam atque eius numquam, officiis expedita libero doloremque possimus debitis provident tenetur?<span class="color-rojo"><i>Read more</i> </span> </p>
+    <hr class="hr">
+    <p id="fondo"><span class="fecha">Nov 12, 2015</span> — <span class="color-rojo"><strong>Lorem ipsum dolor sit</strong></span> — Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque porro rem, facilis pariatur maxime aspernatur suscipit harum dolorum
+        architecto fuga ipsam mollitia quae quo ut adipisci, sunt temporibus similique. Ut...<span class="color-rojo"><i>Read more</i></span></p>
+    <hr class="hr">
+    <p id="fondo"><span class="fecha">Nov 12, 2015</span> — <span class="color-rojo"><strong>The quick, brown fox jumps over a lazy dog</strong></span> — Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perferendis neque assumenda veritatis consequuntur
+        facilis illo aperiam quidem impedit id, laudantium pariatur nihil est, laborum ullam harum qui nemo porro...<span class="color-rojo"><i>Read more</i></span> </p>
+
+    <footer class="pie">
+        &copy; 2016 All rights reserved. Made whit <span class="color-rojo"><u>jekyll</u> </span> and &hearts;
+    </footer>
 </body>
 
 </html>
