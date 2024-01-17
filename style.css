@@ -35,7 +35,7 @@ nav ul {
 
 .logo {
     width: 40px;
-    margin-left: -50%;
+    margin-left: 0%;
     padding-top: -10%;
 }
 
@@ -149,7 +149,7 @@ nav ul li a:hover::after {
 
 .about-col-2 h1 {
     background: linear-gradient( to right, rgb(253, 0, 0), #fff 95%, #ff0000 90%);
-    background-size: 200% auto;
+    background-size: 700% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 3s linear infinite;
@@ -165,4 +165,42 @@ nav ul li a:hover::after {
     100% {
         background-position: 0% 70%;
     }
+}
+
+.subt {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.skills {
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.skill {
+    margin: 1rem 0;
+}
+
+.skill-title {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+    width: 70%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-progress {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ff0000;
+    transition: 1s;
 }
