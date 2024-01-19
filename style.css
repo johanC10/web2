@@ -4,9 +4,11 @@
     font-family: Helvetica;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 
 body {
     background: #080808;
@@ -42,10 +44,12 @@ nav ul {
     padding-top: -10%;
     border-radius: 15px;
 }
+
 .logo:hover{
     box-shadow:0 0 5px #ff0000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
+
 
 nav ul li {
     display: inline-block;
@@ -57,11 +61,12 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    position: relative;
+    position: relative; 
 }
 
 nav ul li a span {
     color: red;
+    text-shadow: 0 0 10px #ff0000, 0 0 5px #ff0000;
 }
 
 nav ul li a::after {
@@ -138,11 +143,12 @@ nav ul li a:hover::after {
     background: white;
     color: #fc1b39;
     transition: 0.5s;
+    -webkit-box-reflect: none;
 }
 
 
-/*--------acerca de--------------*/
 
+/*--------sobre mi--------------*/
 .sobremi{
     background-color: #000000;
     color: #ffffff;
@@ -221,7 +227,7 @@ nav ul li a:hover::after {
 }
 
 
-/*--skills--*/
+
 .skills{
     background-color: #000000;
     color: #ffffff;
@@ -296,9 +302,8 @@ nav ul li a:hover::after {
     font-size: 14px;
 }
 
-  /*--contacto--*/
 
-  .contacto{
+.contacto{
     background-color: #000000;
     color: #ffffff;
     padding: 50px 0;
@@ -325,6 +330,14 @@ nav ul li a:hover::after {
     padding: 10px;
     position: relative;
 }
+.map{
+    width: 600px;
+    margin-left: 10%;
+    padding-top: 7%;
+    border-radius: 10px;
+    position: relative;
+}
+
 .contacto .col input, .contacto .col textarea{
     display: block;
     width: 100%;
@@ -371,23 +384,25 @@ nav ul li a:hover::after {
 .contacto .col .info{
     position: absolute;
     top: 40%;
-    background-color: #000000;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
+    background-color: #252A2E;
+    padding: 30px;
+    max-swidth: 350px;
+    left: 65%;
     transform: translate(-50%, -50%);
 }
 .contacto .col .info ul{
     list-style: none;
 }
 .contacto .col .info ul li{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 .contacto .col .info ul li i{
     color: #ff0000;
     display: inline-block;
     margin-right: 20px;
 }
+
+/*--footer--*/
 footer{
     background-color: #000000;
     color: #fff;
@@ -441,4 +456,3 @@ footer .arriba:hover{
     transition: 0.4s;
     box-shadow:0 0 15px #ff0000;
 }
-
