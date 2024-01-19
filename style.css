@@ -4,6 +4,9 @@
     font-family: Helvetica;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background: #080808;
@@ -34,9 +37,14 @@ nav ul {
 }
 
 .logo {
-    width: 40px;
-    margin-left: 0%;
+    width: 100px;
+    margin-left: -1.9%;
     padding-top: -10%;
+    border-radius: 15px;
+}
+.logo:hover{
+    box-shadow:0 0 5px #ff0000;
+    transition: 0.5s;
 }
 
 nav ul li {
@@ -73,6 +81,21 @@ nav ul li a:hover::after {
     width: 100%;
     -webkit-box-reflect: infinite 1px linear-gradient(transparent, #0005);
     box-shadow: 0 0 10px white, 0 0 5px #ff0022, 0 0 25px #fd0022, 0 0 100px white;
+}
+.nav-responsive{
+    background-color: rgb(255, 0, 0);
+    color: #000000;
+    padding: 5px 12px;
+    border-radius: 65px;
+    cursor: pointer;
+    margin-top: -6px;
+    display: none;
+}
+.nav-responsive:hover{
+    background: white;
+    color: #fc1b39;
+    transition: 0.5s;
+    box-shadow:0 0 20px #ff0000;
 }
 
 .header-text {
@@ -115,46 +138,109 @@ nav ul li a:hover::after {
     background: white;
     color: #fc1b39;
     transition: 0.5s;
-    -webkit-box-reflect: none;
 }
 
 
 /*--------acerca de--------------*/
 
-#about {
-    padding: 50px 0;
-    margin-left: -100px;
+.sobremi{
+    background-color: #000000;
     color: #ffffff;
+    padding: 50px 50px;
 }
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
 }
-
-.about-col-1 {
-    flex-basis: 35%;
-}
-
-.about-col-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.about-col-2 {
-    padding-top: 5px;
-    flex-basis: 50%;
-}
-
-.about-col-2 h1 {
-    background: linear-gradient( to right, rgb(253, 0, 0), #fff 95%, #ff0000 90%);
+.sobremi h2{
+    font-size: 48px;
+    text-align: left;
+    padding: 20px 0;
+    background: linear-gradient( to right, rgb(253, 0, 0), #fff 100%, #ff0000 90%);
     background-size: 700% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradient 3s linear infinite;
 }
 
+
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: left;
+    
+}
+.sobremi .contenido-seccion p span{
+    color: #ff0000;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col
+{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #ff0000;
+    width: 130px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color: #ff0000;
+}
+.sobremi .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/*--skills--*/
+.skills{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient( to right, rgb(253, 0, 0), #fff 100%, #ff0000 9%);
+    background-size: 700% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+}
 @keyframes gradient {
     0% {
         background-position: 0% 75%;
@@ -167,40 +253,192 @@ nav ul li a:hover::after {
     }
 }
 
-.subt {
-    font-size: 30px;
-    font-weight: 600;
+.skills .fila{
+    display: flex;
 }
-
-.skills {
-    margin: 1.5rem 0 2.5rem 0;
-}
-
-.skill {
-    margin: 1rem 0;
-}
-
-.skill-title {
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-}
-
-.skill-bar {
-    width: 70%;
-    height: 8px;
-    border-radius: 4px;
-    background-color: #ffffff;
-    position: relative;
-    overflow: hidden;
-}
-
-.skill-progress {
-    position: absolute;
+.skills .fila .col{
     width: 50%;
-    height: 100%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.skills .skill span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #19191a;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #ff0000;
+    position:absolute;
     top: 0;
     left: 0;
-    background-color: #ff0000;
-    transition: 1s;
+    height: 8px;
 }
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #ff0000;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -15px;
+    right: -15px;
+    font-size: 14px;
+}
+
+  /*--contacto--*/
+
+  .contacto{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 45px;
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient( to right, rgb(253, 0, 0), #fff 100%, #ff0000 90%);
+    background-size: 700% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #000000;
+    color: #7e2727;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.contacto.col input, ::placeholder{
+    color: rgb(230, 145, 145)
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff0000;
+    z-index: -1;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #000000;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #ff0000;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #f30000;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+footer .redes a:hover{
+    background-color: #ffffff;
+    color: #ff0000;
+    box-shadow:0 0 15px #ff0000;
+    transform:translateY(-3px);
+    transition: 0.3s;
+    
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+footer .arriba:hover{
+    background-color: #ffffff;
+    color: #ff0000;
+    transition: 0.4s;
+    box-shadow:0 0 15px #ff0000;
+}
+
