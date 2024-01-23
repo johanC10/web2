@@ -86,22 +86,9 @@ nav ul li a:hover::after {
     width: 100%;
     -webkit-box-reflect: infinite 1px linear-gradient(transparent, #0005);
     box-shadow: 0 0 10px white, 0 0 5px #ff0022, 0 0 25px #fd0022, 0 0 100px white;
+    
 }
-.nav-responsive{
-    background-color: rgb(255, 0, 0);
-    color: #000000;
-    padding: 5px 12px;
-    border-radius: 65px;
-    cursor: pointer;
-    margin-top: -6px;
-    display: none;
-}
-.nav-responsive:hover{
-    background: white;
-    color: #fc1b39;
-    transition: 0.5s;
-    box-shadow:0 0 20px #ff0000;
-}
+
 
 .header-text {
     margin-top: 20%;
@@ -113,6 +100,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 
+
 .header-text h1 span {
     color: #ff0000;
     text-shadow: 0 0 40px #ff0000, 0 0 8px #ff0000;
@@ -123,6 +111,14 @@ nav ul li a:hover::after {
     font-family: 'Courier New', Courier, monospace;
     font-size: 19px;
     margin-top: 5px;
+}
+.header-text p.texti {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 710px;
+    height: 50px;
+    padding-top: 18px;
+    
 }
 
 .header-text a {
@@ -171,10 +167,12 @@ nav ul li a:hover::after {
 
 
 .sobremi .contenido-seccion p{
-    font: 18px;
+    font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
     text-align: left;
+    width: 710px;
+    height: 50px;
     
 }
 .sobremi .contenido-seccion p span{
@@ -189,8 +187,10 @@ nav ul li a:hover::after {
     width: 50%;
 }
 .sobremi .fila .col h3{
-    font-size: 28px;
+    padding-top: 55px;
+    font-size: 25px;
     margin-bottom: 25px;
+    color: #ff0000;
 }
 .sobremi .fila .col ul{
     list-style: none;
@@ -215,9 +215,9 @@ nav ul li a:hover::after {
     margin: 0 15px 15px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    transition: .3s;
+    transition: 0.3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #ff0000;
 }
@@ -263,12 +263,13 @@ nav ul li a:hover::after {
     display: flex;
 }
 .skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
+    width: 60%;
+    padding: 20px 20px;
+    margin-left: 90px;
 }
 .skills .fila .col h3{
     font-size: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 .skills .skill span{
     font-weight: bold;
@@ -324,6 +325,7 @@ nav ul li a:hover::after {
 }
 .contacto .fila{
     display: flex;
+    padding-top: 2%;
 }
 .contacto .col{
     width: 50%;
@@ -333,25 +335,28 @@ nav ul li a:hover::after {
 .map{
     width: 600px;
     margin-left: 10%;
-    padding-top: 7%;
+    padding-top: 0%;
     border-radius: 10px;
     position: relative;
 }
-
 .contacto .col input, .contacto .col textarea{
     display: block;
     width: 100%;
     padding: 18px;
-    border: none;
+    border: 1px solid rgb(255, 255, 255);
     margin-bottom: 20px;
     background-color: #000000;
-    color: #7e2727;
+    color: #ffffff;
     font-size: 18px;
     border-radius: 15px;
+    
 }
+
 .contacto.col input, ::placeholder{
-    color: rgb(230, 145, 145)
+    color: rgb(255, 0, 0)
+
 }
+
 .contacto button{
     cursor: pointer;
     background-color: transparent;
@@ -380,6 +385,7 @@ nav ul li a:hover::after {
 .contacto button:hover .overlay{
     width: 100%;
 }
+
 
 .contacto .col .info{
     position: absolute;
