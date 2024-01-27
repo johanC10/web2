@@ -5,13 +5,70 @@
     <meta charset="UTF-8" />
     <title>Actividad 2</title>
     <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
 
+        .noria {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .soporte {
+            width: 50px;
+            height: 200px;
+            background-color: #333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .asiento {
+            width: 130px;
+            height: 130px;
+            border-radius: 35%;
+            background-color: #3498db;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: giraNoria 8s linear infinite;
+        }
+        .asiento2{
+            width: 190px;
+            height: 190px;
+            border-radius: 20%;
+            background-color: #ff0000;
+            opacity:calc(50%);
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: giraNoria 8s linear infinite;
+        }
+
+        @keyframes giraNoria {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
     </style>
-
 </head>
 
 <body>
 
-</body>
+    <div class="noria">
+        <div class="soporte"></div>
+        <div class="asiento"></div>
+        <div class="asiento2"></div>
+    </div>
 
+</body>
 </html>

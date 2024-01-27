@@ -5,13 +5,28 @@
     <meta charset="UTF-8" />
     <title>Actividad 1</title>
     <style>
+        .imagen-container {
+            position: relative;
+            width: 300px; 
+        }
 
+        .imagen {
+            width: 80%;
+            height: auto;
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .imagen:hover {
+            filter: grayscale(100%); 
+        }
     </style>
-
 </head>
 
 <body>
 
-</body>
+    <div class="imagen-container">
+        <img src="../places-images/jpg/spider.jpg" class="imagen">
+    </div>
 
+</body>
 </html>

@@ -5,13 +5,54 @@
     <meta charset="UTF-8" />
     <title>Actividad 3</title>
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
+        #aviso-cookies {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            animation: mostrarAviso 2s ease-in-out;
+            opacity: 1;
+        }
+
+        #boton-aceptar {
+            background-color: #fff;
+            color: #3498db;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        @keyframes mostrarAviso {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     </style>
-
 </head>
 
 <body>
 
-</body>
+    <div id="aviso-cookies">
+        <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+        <button id="boton-aceptar">Aceptar</button>
+    </div>
 
+</body>
 </html>

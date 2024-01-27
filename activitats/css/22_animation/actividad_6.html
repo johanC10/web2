@@ -5,13 +5,51 @@
     <meta charset="UTF-8" />
     <title>Actividad 6</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
 
+        .pendulo {
+            width: 5px;
+            height: 150px;
+            background-color: #3498db; 
+            position: relative;
+            margin: 0 auto;
+            animation: swing 5s ease-in-out infinite;
+            transform-origin: 50% 0; 
+        }
+        .bola {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #e74c3c; 
+            border-radius: 50%;
+            top: 100%; 
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes swing {
+            0%, 100% {
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(-90deg);
+            }
+        }
     </style>
-
 </head>
 
 <body>
 
-</body>
+    <div class="pendulo">
+        <div class="bola"></div>
+    </div>
 
+</body>
 </html>

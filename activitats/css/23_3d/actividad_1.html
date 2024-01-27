@@ -5,12 +5,36 @@
     <meta charset="UTF-8" />
     <title>Actividad 1</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
 
+        .imagen-container {
+            perspective: 1000px;
+        }
+
+        .imagen {
+            width: 310px;
+            height: 300px;
+            transition: transform 0.5s;
+        }
+
+        .imagen:hover {
+            transform: rotateY(25deg) rotateX(-20deg) scale(2.5);
+        }
     </style>
-
 </head>
 
 <body>
+
+    <div class="imagen-container">
+        <img src="../places-images/jpg/laroca.png" alt="Imagen" class="imagen">
+    </div>
 
 </body>
 
