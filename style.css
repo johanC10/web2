@@ -228,81 +228,9 @@ nav ul li a:hover::after {
 
 
 
-.skills{
-    background-color: #000000;
-    color: #ffffff;
-    padding: 50px 20px;
-}
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.skills h2{
-    font-size: 48px;
-    text-align: center;
-    padding: 20px 0;
-    background: linear-gradient( to right, rgb(253, 0, 0), #fff 100%, #ff0000 9%);
-    background-size: 700% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 3s linear infinite;
-}
-@keyframes gradient {
-    0% {
-        background-position: 0% 75%;
-    }
-    50% {
-        background-position: 100%, 50%;
-    }
-    100% {
-        background-position: 0% 70%;
-    }
-}
 
-.skills .fila{
-    display: flex;
-}
-.skills .fila .col{
-    width: 60%;
-    padding: 20px 20px;
-    margin-left: 90px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    margin-bottom: 28px;
-}
-.skills .skill span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 15px;
-}
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #19191a;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: #ff0000;
-    position:absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #ff0000;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -15px;
-    right: -15px;
-    font-size: 14px;
-}
 
+/*--------contacto--------------*/
 
 .contacto{
     background-color: #000000;
@@ -392,7 +320,7 @@ nav ul li a:hover::after {
     top: 40%;
     background-color: #252A2E;
     padding: 30px;
-    max-swidth: 350px;
+    max-width: 350px;
     left: 65%;
     transform: translate(-50%, -50%);
 }

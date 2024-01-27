@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+div {
+    margin: 5px;
+    padding:30px;
+    border: 1px solid #ffffff;
+     
+}
+
+ul {
+    list-style: none;
+    padding: 70px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+h1{
+    color: #ff0000;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #ff0000;
+    display:block;
+    padding: 5px;
+    border: 1px solid #ff0000; /* Borde para resaltar los enlaces */
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #f0f0f0; /* Cambiar el color de fondo al pasar el ratón */
+}
