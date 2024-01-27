@@ -5,12 +5,29 @@
     <meta charset="UTF-8" />
     <title>Actividad 2</title>
     <style>
+        .modal-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: transform 0.3s ease; /* Agrega una transición suave al cambio de tamaño */
+        }
 
+        .modal-container:hover {
+            transform: translate(-50%, -50%) scale(2); /* Duplica el tamaño al pasar el cursor */
+        }
     </style>
-
 </head>
 
 <body>
+
+    <div class="modal-container">
+        <p>Contenido</p>
+    </div>
 
 </body>
 

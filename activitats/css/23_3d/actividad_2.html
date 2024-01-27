@@ -5,12 +5,60 @@
     <meta charset="UTF-8" />
     <title>Actividad 2</title>
     <style>
+        body {
+    display: flex;
+    background: white;
+    margin: 0;
+    height: 100vh; /* Ajusta la altura del cuerpo para ocupar toda la pantalla */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.wall img {
+    width: 200%;
+    height: 70vh; /* La mitad de la pantalla */
+    object-fit: cover;
+    margin-left: -100%;
+}
+
+.floor img {
+    width: 125%;
+    height: 200vh; /* La mitad de la pantalla */
+    object-fit: cover;
+    margin-top: -43%;
+    margin-left: -17%;
+    left: 0;
+    transform: rotateY(8deg) rotateX(100deg) rotateZ(-4deg);
+}
+
+.vaca img {
+    position: absolute;
+    filter: drop-shadow(-80px -80px 1.8px rgb(0, 0, 0));
+    bottom: 25%; /* Ajusta la posición vertical de la vaca */
+    left: 50%;
+    transform: translate(-50%, 0); /* Centra horizontalmente */
+}
 
     </style>
 
 </head>
 
 <body>
+    <div class="container">
+        <div class="wall">
+            <img src="../places-images/jpg/wall.jpg">
+        </div>
+        <div class="floor">
+            <img src="../places-images/jpg/floor.jpg" class="img">
+        </div>
+        <div class="vaca">
+            <img src="../places-images/jpg/oveja.svg" alt="">
+        </div>
+        
+    </div>
 
 </body>
 

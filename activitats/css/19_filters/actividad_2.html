@@ -5,12 +5,28 @@
     <meta charset="UTF-8" />
     <title>Actividad 2</title>
     <style>
+        .imagen-container {
+            position: relative;
+            width: 400px; 
+        }
 
+        .imagen {
+            width: 100%;
+            height: auto;
+            transition: filter 0.3s ease;
+        }
+
+        .imagen:hover {
+            filter: invert(100%);
+        }
     </style>
-
 </head>
 
 <body>
+
+    <div class="imagen-container">
+        <img src="../places-images/jpg/esqueleto.jpg" class="imagen">
+    </div>
 
 </body>
 

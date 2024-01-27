@@ -5,13 +5,54 @@
     <meta charset="UTF-8" />
     <title>Actividad 5</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
 
+        .loading-container {
+            text-align: center;
+        }
+
+        .loading-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .loading-spinner {
+            border: 8px solid #00ff15; 
+            border-top: 8px solid transparent;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+            margin-left: 22px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
-
 </head>
 
 <body>
 
-</body>
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Cargando...</div>
+    
+    </div>
 
+</body>
 </html>

@@ -5,12 +5,39 @@
     <meta charset="UTF-8" />
     <title>Actividad 3</title>
     <style>
+        .circulo-container {
+            display: flex;
+            margin-top: 20px;
+        }
 
+        .circulo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 2px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .circulo.rojo {
+            background-color: red;
+        }
+
+        .circulo.azul {
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+
+        .circulo.azul:hover {
+            margin-left: -102px;
+        }
     </style>
-
 </head>
 
 <body>
+
+    <div class="circulo-container">
+        <div class="circulo rojo"></div>
+        <div class="circulo azul"></div>
+    </div>
 
 </body>
 

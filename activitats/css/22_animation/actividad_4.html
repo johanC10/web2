@@ -5,12 +5,115 @@
     <meta charset="UTF-8" />
     <title>Actividad 4</title>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
 
+        .reloj {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 8px solid #333;
+            border-radius: 50%;
+            
+        }
+
+        
+        .aguja-horas{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            transform: translate(-50%, -100%);
+            animation-duration: 200s; 
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        .aguja-minutos
+             {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            transform: translate(-50%, -100%);
+            animation-duration: 60s; 
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .aguja-segundos{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+            transform: translate(-50%, -100%);
+            animation-duration: 2s; 
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .aguja-horas {
+            width: 4px;
+            height: 50px;
+            background-color: #333;
+            animation-name: girarHoras;
+        }
+
+        .aguja-minutos {
+            width: 2px;
+            height: 70px;
+            background-color: #333;
+            animation-name: girarMinutos;
+        }
+
+        .aguja-segundos {
+            width: 1px;
+            height: 90px;
+            background-color: #ff0000;
+            animation-name: girarSegundos;
+        }
+
+        @keyframes girarHoras {
+            from {
+                transform: translate(-50%, -100%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -100%) rotate(360deg);
+            }
+        }
+
+        @keyframes girarMinutos {
+            from {
+                transform: translate(-50%, -100%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -100%) rotate(360deg);
+            }
+        }
+
+        @keyframes girarSegundos {
+            from {
+                transform: translate(-50%, -100%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -100%) rotate(360deg);
+            }
+        }
     </style>
-
 </head>
 
 <body>
+
+    <div class="reloj">
+        <div class="aguja-horas"></div>
+        <div class="aguja-minutos"></div>
+        <div class="aguja-segundos"></div>
+    </div>
 
 </body>
 

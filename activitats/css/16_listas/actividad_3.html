@@ -11,32 +11,36 @@
 
         ul { 
             list-style-type: none;
-            padding-left: 40px;
+            padding-left: 50px;
             background-color: rgb(98, 153, 160);
-            
-            box-sizing: border-box;
             width: 145px;
-            height: 139px;
-            padding: 1px;
-            border: 3px solid black;
+            height: 137px;
+            padding: 0;
         }
 
-        p {
+        li {
             color: rgb(255, 255, 255);
-            font-size: 20px;
+            font-size: 21px;
             text-align: center;
             letter-spacing: 1px;
-            border-bottom: 2px solid black;
-            margin-top: 13%;
-            
+            border: 2px solid black;
+            margin-top: 0;
+            padding: 6%;   
+        }
+
+        li:hover{
+            color: rgb(0, 0, 0);
+            background-color:rgb(255, 255, 255);
+            text-shadow:1px 1px 2px rgb(255, 0, 0);
+            text-decoration: line-through;
         }
     </style>
 </head>
 <body>
     <ul>
-        <p>Productos</p>
-        <p>Carrito</p>
-        <p>Perfil</p>
+        <li>Productos</li>
+        <li>Carrito</li>
+        <li>Perfil</li>
     </ul>
 </body>
 </html>
