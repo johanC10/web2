@@ -14,6 +14,18 @@
             font-size: 180%;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
+        .vinicio{
+            font-size:60%;
+            text-decoration: none; 
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            padding: 8px;
+            border-radius: 30px;
+            position:absolute;
+            margin-left: 40%;
+            margin-top: -3%;
+            font-weight: bold;
+        }
 
         #inicio img{
             width: 80%;
@@ -36,14 +48,48 @@
         #pg-cont{
             margin-top: 10%;
         }
-
+        footer{
+    background-color: transparent;  
+    color: #000000;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #f30000;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+footer .redes a:hover{
+    background-color: #000000;
+    color: #ff0000;
+    box-shadow:0 0 15px #ff0000;
+    transform:translateY(-3px);
+    transition: 0.3s;
+    
+}
 
 
     </style>
     </head>
   
     <body>
+
+
         <section id="inicio">
+            <a href="index.html" class="vinicio">Volver</a>
             <h2>Inicio</h2>
             <img src="./imagenes/Captura de pantalla (88).png">
         </section>
@@ -63,6 +109,15 @@
             <h2>Pagina contacto</h2>
             <img src="./imagenes/Captura de pantalla (92).png">
         </section>
-
+        <footer>
+          
+            <div class="redes">
+                <a href="#l"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#l"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#l"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/johanC10"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+          </footer>
     </body>
 </html>
