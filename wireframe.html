@@ -5,9 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wirefreme</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="wireframe.css">
+    <link rel="stylesheet" href="./styles/wireframe.css">
+    <style>
+        body{
+            margin: 5%;
+            background: linear-gradient( rgb(253, 0, 0), #36353577 80%, #ff0000 90%);
+            text-align: center;
+            font-size: 180%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .vinicio{
+            font-size:60%;
+            text-decoration: none; 
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            padding: 8px;
+            border-radius: 30px;
+            position:absolute;
+            margin-left: 40%;
+            margin-top: -3%;
+            font-weight: bold;
+        }
+
+        #inicio img{
+            width: 80%;
+            
+        }
+        #sobremi{
+            margin-top: 10%;
+        }
+
+        #sobremi img{
+            width: 80%;
+            
+        }
+        #contacto{
+            margin-top: 10%;
+        }
+        #actividades{
+            margin-top: 10%;
+        }
+        #pg-cont{
+            margin-top: 10%;
+        }
+        footer{
+    background-color: transparent;  
+    color: #000000;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #f30000;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+    background-color: #000000;
+}
+footer .redes a:hover{
+    background-color: #ffffff;
+    color: #ff0000;
+    box-shadow:0 0 15px #ff0000;
+    transform:translateY(-3px);
+    transition: 0.3s;
+    
+}
+
+.copy{
+    font-size: 50%;
+    color: #ffffff;
+}
+
+
+    </style>
     </head>
+  
     <body>
 
+
+        <section id="inicio">
+            <a href="index.html" class="vinicio">Volver</a>
+            <h2>Inicio</h2>
+            <img src="./imagenes/Captura de pantalla (88).png">
+        </section>
+        <section id="sobremi">
+            <h2>Sobre Mi</h2>
+            <img src="./imagenes/Captura de pantalla (89).png">
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <img src="./imagenes/Captura de pantalla (90).png">
+        </section>
+        <section id="actividades">
+            <h2>Actividades</h2>
+            <img src="./imagenes/Captura de pantalla (91).png">
+        </section>
+        <section id="pg-cont">
+            <h2>Pagina contacto</h2>
+            <img src="./imagenes/Captura de pantalla (92).png">
+        </section>
+        <footer>
+          
+            <div class="redes">
+                <a href="#l"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#l"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#l"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/johanC10"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <div class="copy">
+                <p>Copyright <i class="fa-solid fa-copyright" style="color: #000000;"></i> Johan Estupiñan 2024</p>
+            </div>
+          </footer>
     </body>
 </html>

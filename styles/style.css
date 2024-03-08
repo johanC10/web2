@@ -19,13 +19,13 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(./imagenes/miles2.jpg);
+    background-image: url(../imagenes/miles2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .container {
-    padding: 10px 10%;
+    padding: 10px 5%;
 }
 
 nav {
@@ -78,7 +78,7 @@ nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.3s;
+    transition: 0.2s;
     display: inline-block;
     align-items: center;
 }
@@ -113,7 +113,7 @@ nav ul li a:hover::after {
     font-size: 19px;
     margin-top: 5px;
 }
-.header-text p.texti {
+.header-text p.texto {
     font-family: sans-serif;
     font-size: 16px;
     width: 710px;
@@ -149,11 +149,11 @@ nav ul li a:hover::after {
 .sobremi{
     background-color: #000000;
     color: #ffffff;
-    padding: 50px 50px;
+    padding: 50px 5%;
 }
 .sobremi .contenido-seccion{
     max-width: 1100px;
-    margin: auto;
+    margin: 0;
 }
 .sobremi h2{
     font-size: 48px;
@@ -236,11 +236,11 @@ nav ul li a:hover::after {
 .contacto{
     background-color: #000000;
     color: #ffffff;
-    padding: 50px 0;
+    padding: 50px 5%;
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
-    margin: auto;
+    margin: 0;
 }
 .contacto h2{
     font-size: 45px;
@@ -318,12 +318,13 @@ nav ul li a:hover::after {
 
 .contacto .col .info{
     position: absolute;
-    top: 40%;
+    top: 35%;
     background-color: #252A2E;
     padding: 30px;
     max-width: 350px;
     left: 65%;
     transform: translate(-50%, -50%);
+    text-align:left
 }
 .contacto .col .info ul{
     list-style: none;
@@ -334,11 +335,12 @@ nav ul li a:hover::after {
 .contacto .col .info ul li i{
     color: #ff0000;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 /*--footer--*/
 footer{
+    background: linear-gradient(#000000, #ff000028, #ff0000);
     background-color: #000000;
     color: #fff;
     padding: 50px 0 30px 0;
